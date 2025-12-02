@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 100%;
+    font-family: Georgia;
+}
+
+div, section, header, span, ul, li, a {
+    box-sizing: border-box;
+}
+
+/* Configurações */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2.5em;
+    align-items: center;
+    background-color: #000000;
+    position: fixed;
+    z-index: 999;
+}
+
+#menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 1rem;
+}
+
+#menu li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    text-shadow: 3px 3px 3px #8a8a8a;
+}
+
+#menu li a:hover {
+    color: rgb(29, 107, 3);
+    font-weight: bold;
+    background-color: rgb(127, 211, 101);
+}
+
+#logo {
+    max-height: 5rem;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+#inicio {
+    background-color: rgb(127, 211, 101);
+    padding: 4.44rem 0rem 0rem 0rem;
+    align-items: center;
+    height: auto;
+}
+
+#inicio h1 {
+    color: #fff;
+}
+
+#sobrenos {
+    background-color: transparent;
+    background-image: url('images/wallpaper.png');
+    background-size: 100%;
+    color: #000;
+}
+
+#produtos {
+    background-color: #fff;
+    color: #dd7e7c;
+}
+
+#receitas {
+    background-color: #dd7e7c;
+    color: #fff;
+}
+
+#contactos {
+    background-color: #000;
+    color: #ffaead;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 9.5rem;
+    padding-bottom: 3rem;
+}
+
+footer {
+    height: 30%;
+}
+
+/*Inicio*/
+#inicio img {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+
+/* Sobre Nos */
+#carta {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card_sobrenos {
+    background-color: #00000080;
+    color: #ffffff;
+    margin: 1.1em 0.5em;
+    box-shadow: 0 4px 8px 0 #5f2b2b;
+    transition: 0.3s;
+    border-radius: 9px;
+    width: 100%;
+    min-width: 240px;
+    display: inline-block;
+}
+
+.card_sobrenos h4 {
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+
+.card_sobrenos:hover {
+    box-shadow: 0px 0px 8px 6px #ffffff;
+}
+
+/* Produtos */
+#cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card_produto {
+    background-color: #fff;
+    color: #dd7e7c;
+    margin: 1.1em 0.1em;
+    box-shadow: 0 4px 8px 0 #bd6665;
+    transition: 0.3s;
+    border-radius: 9px;
+    width: 30%;
+    min-width: 240px;
+    display: inline-block;
+}
+
+.card_container {
+    padding: 1em 1.2em;
+}
+
+.card_produto img {
+    border-radius: 5px 5px 0px 0px;
+    object-fit: cover;
+    width: 80%;
+    aspect-ratio: 2/2;
+    margin-left: 0.65cm;
+}
+
+.card_container h4 {
+    text-align: center;
+}
+
+.card_produto:hover {
+    box-shadow: 0 8px 16px 0 #ffa5a5;
+    scale: 1.02s;
+    rotate: 2deg;
+}
+
+p {
+    text-align: center;
+}
