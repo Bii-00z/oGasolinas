@@ -17,7 +17,6 @@ div, section, header, span, ul, li, a {
 }
 
 /* Configurações */
-
 header {
     width: 100%;
     display: flex;
@@ -88,14 +87,14 @@ section {
     transform: translate(-50%, -50%);
     color: #fff;
     z-index: 2;
-    font-size: 2.5rem;
+    font-size: 4rem;
     text-align: center;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
 #inicio p {
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -105,13 +104,14 @@ section {
 
 /* Sobre Nos */
 #sobrenos {
-    background-color: rgb(41, 61, 35);
+    background-image: url('images/fundosobrenos.png');
     background-size: 100%;
     color: #fff;
 }
 
 #carta {
     width: 100%;
+    height: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,6 +133,7 @@ section {
 .card_sobrenos h4 {
     text-align: center;
     font-family: 'Segoe UI';
+    font-size: large;
 }
 
 .card_sobrenos:hover {
@@ -189,11 +190,74 @@ section {
 }
 /* FIM - Sobre Nos */
 
-/* Reservas */
 
+/* ===================================== RESERVAS ===================================== */
 #reservas {
     background-color: #dd7e7c;
     color: #fff;
+}
+.reserva-container {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 4rem;
+    flex-wrap: wrap;
+}
+
+/* Formulário */
+.form-reserva {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 400px;
+}
+
+.form-reserva input,
+.form-reserva textarea {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.form-reserva button {
+    padding: 0.8rem;
+    background-color: #dd7e7c;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-reserva button:hover {
+    background-color: #c66b6a;
+}
+
+/* Contacto direto */
+.reserva-contacto {
+    background-color: #00000080;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+}
+
+.reserva-contacto h2 {
+    margin-bottom: 1rem;
+}
+
+.reserva-contacto a {
+    color: #ffaead;
+    text-decoration: none;
+}
+
+.reserva-contacto a:hover {
+    text-decoration: underline;
 }
 /* FIM - Reservas */
 
@@ -201,9 +265,36 @@ section {
 /* Localização */
 
 #localização {
-    background-color: #dd7e7c;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('images/Gasolinas-1.png');
+    object-fit: cover;
+    background-size: 100%;
+    aspect-ratio: 16/9;
     color: #fff;
 }
+
+.localizacao-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 5rem;
+}
+
+.localizacao-texto {
+    width: 40%;
+}
+
+.localizacao-texto h4 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+iframe {
+    width: 700px;
+    height: 350px;
+    border-radius: 10px;
+}
+
 /* FIM - Localização */
 
 /* Contactos */
