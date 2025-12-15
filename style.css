@@ -132,6 +132,7 @@ section {
 }
 
 .card_sobrenos h4 {
+    margin-top: 1rem;
     text-align: center;
     font-family: 'Segoe UI';
     font-size: large;
@@ -142,14 +143,15 @@ section {
 }
 
 .horario {
-    margin-top: 1.5rem;
-    background-color: #25422580; /* leve transparência */
+    margin-top: 1rem;
+    background-color: #25422580;
     padding: 1rem;
     border-radius: 0px 0px 8px 8px;
 }
 
 .horario h4 {
     text-align: center;
+    font-family: 'Segoe UI';
     margin-bottom: 0.8rem;
     font-size: 1.1rem;
     color: #fff;
@@ -161,6 +163,7 @@ section {
 }
 
 .horario ul li {
+    font-family: 'Segoe UI';
     text-align: center;
     margin: 0.3rem 0;
     color: #fff;
@@ -170,52 +173,77 @@ section {
 
 /* ===================================== EMENTA ===================================== */
 #ementa {
-    background-color: #fff;
-    color: #dd7e7c;
+    background-color: rgb(127, 211, 101);
+    color: #254225;
 }
 
-#cards {
-    width: 100%;
+.ementa-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Slider */
+.ementa-slider {
+    position: relative;
+    background: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 370px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
-.card_produto {
-    background-color: #fff;
-    color: #dd7e7c;
-    margin: 1.1em 0.1em;
-    box-shadow: 0 4px 8px 0 #bd6665;
-    transition: 0.3s;
-    border-radius: 9px;
-    width: 30%;
-    min-width: 240px;
-    display: inline-block;
+.ementa-slide {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: none;
 }
 
-.card_container {
-    padding: 1em 1.2em;
+.ementa-slide.active {
+    display: block;
 }
 
-.card_produto img {
-    border-radius: 5px 5px 0px 0px;
-    object-fit: cover;
-    width: 80%;
-    aspect-ratio: 2/2;
-    margin-left: 0.65cm;
+
+/* Botões */
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
-.card_container h4 {
-    text-align: center;
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Facebook */
+.ementa-facebook {
+    background: #fff;
+    color: #000;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.card_produto:hover {
-    box-shadow: 0 8px 16px 0 #ffa5a5;
-    scale: 1.02s;
-    rotate: 2deg;
+.ementa-facebook img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin: 1rem auto 0;
+    display: block;
 }
-/* FIM - Sobre Nos */
+/* FIM - Ementas */
 
 
 /* ===================================== RESERVAS ===================================== */
@@ -285,7 +313,7 @@ section {
     background-color: rgb(127, 211, 101);
 }
 
-/* --- Contacto direto --- */
+/* Contacto direto */
 .reserva-contacto {
     background-color: #00000080;
     color: #fff;
@@ -297,6 +325,22 @@ section {
 
 .reserva-contacto h2 {
     margin-bottom: 2rem;
+}
+
+.reserva-contacto p {
+    font-family: 'Segoe UI';
+}
+.reserva-contacto a[href="#sobrenos"] {
+    color: rgb(160, 236, 137);
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #000;
+    cursor: pointer;
+}
+
+.reserva-contacto a[href="#sobrenos"]:hover {
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
+    text-decoration: none;
 }
 /* FIM - Reservas */
 
@@ -339,17 +383,84 @@ iframe {
 /* ===================================== CONTACTOS ===================================== */
 
 #contactos {
-    background-color: #000;
-    color: #ffaead;
+    background-color: #ffffff;
+    color: #306930;
+}
+
+#contactos h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contactos-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contacto-card {
+    background-color: #111;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+    transition: 0.3s;
+}
+
+.contacto-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgb(8, 109, 22);
+}
+
+.contacto-card h3 {
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.contacto-card p {
+    font-size: 1.05rem;
+    color: rgb(127, 211, 101);  
+}
+
+.contacto-card a {
+    color: rgb(127, 211, 101);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contacto-card a:hover {
+    text-decoration: underline;
 }
 /* FIM - Contactos */
 
 /* Footer */
 footer {
-    width: 100%;
-    height: 25vh;
+    background-color: #000;
+    color: #fff;
+    padding: 2.5rem 1rem;
+    text-align: center;
 }
 
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+footer a {
+    color: rgb(127, 211, 101);
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 0.3rem;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
 
 p {
     text-align: center;

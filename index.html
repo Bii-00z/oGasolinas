@@ -7,6 +7,7 @@
     <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="style.css">
     <script src="js/slideshow.js" defer></script>
+    <script src="js/ementa-slider.js" defer></script>
 </head>
 <body>
         <header>
@@ -64,40 +65,39 @@
 
     <!--Secção Ementa-->
     <section id="ementa">
-        <!--Título e subtítulo secção-->
         <h1>Ementa</h1>
-        <p>Body Splash</p>
+        <div class="ementa-layout">
 
-        <!--Conteudos da secção-->
-        <div id="cards">
-            <div class="card_produto">
-                <img src="images/BareVanilla.png" alt="Produto 1">
-                <div class="card_container">
-                    <h4>Bare Vanilla</h4>
-                    <p>16,99€</p>
-                </div>
+            <!-- Menu -->
+            <div class="ementa-slider">
+               <button type="button" class="slide-btn prev">&#10094;</button>
+
+                <img class="ementa-slide active" src="images/pag1.png" alt="Ementa 1">
+                <img class="ementa-slide" src="images/pag2.png" alt="Ementa 2">
+                <img class="ementa-slide" src="images/pag3.png" alt="Ementa 3">
+                <img class="ementa-slide" src="images/pag4.png" alt="Ementa 4">
+                <img class="ementa-slide" src="images/pag5.png" alt="Ementa 5">
+
+                <button type="button" class="slide-btn next">&#10095;</button>
             </div>
-            <div class="card_produto">
-                <img src="images/CoconutPassion.png" alt="Produto 2">
-                <div class="card_container">
-                    <h4>Coconut Passion</h4>
-                    <p>17,99€</p>
-                </div>
+
+            <!-- Facebook -->
+            <div class="ementa-facebook">
+                <h3>Pratos do Dia</h3>
+                <p>Acompanhe os nossos pratos do dia no Facebook.</p>
+
+                <a href="https://www.facebook.com/OGasolinas/photos" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook Gasolinas">
+                </a>
             </div>
-            <div class="card_produto">
-                <img src="images/LoveSpell.png" alt="Produto 3">
-                <div class="card_container">
-                    <h4>Love Spell</h4>
-                    <p>16,99€</p>
-                </div>
-            </div>
-        </div>
+
+           </div>
     </section>
 
     <!--Secção Reservas-->
     <section id="reservas">
-        <h1>Reservas</h1>
-        <p>Reserve a sua mesa e evite esperas. Pode preencher o formulário abaixo ou contactar-nos diretamente por telefone.</p>
+        <h1>Faça já a sua reserva</h1>
+        <p>Reserve a sua mesa e evite esperas.<br>Pode preencher o formulário abaixo ou contactar-nos diretamente por telefone.</p>
 
         <div class="reserva-container">
             <!-- Formulário de reservas -->
@@ -114,7 +114,7 @@
             <div class="reserva-contacto">
                 <h2>Contacte-nos diretamente</h2>
                 <p>📞 +351 263 516 392</p>
-                <p>⏰ Horário: Secção "Sobre Nós"</p>
+                <p>⏰ <a href="#sobrenos">Horário</a></p>
             </div>
         </div>
     </section>
@@ -137,11 +137,51 @@
 
 
     <!--Secção Contactos-->
-    <section id="contactos"><h1>Contactos</h1></section>
+    <section id="contactos">
+        <h1>Contactos</h1>
+
+        <div class="contactos-cards">
+
+            <div class="contacto-card">
+                <h3>Telefone</h3>
+                <p>+351 263 516 392</p>
+            </div>
+
+            <div class="contacto-card">
+                <h3>Email</h3>
+                <p><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWsmCLTJQmdPZCZMdjjHDFBdJjNMsBxzMKTvNqMnpngnxKhHzxzRhQqPmhgRcWvZQFRXCcPxg" target="_blank">geral@osgasolinas.pt</a></p>
+            </div>
+
+            <div class="contacto-card">
+                <h3>WhatsApp</h3>
+                <p><a href="https://api.whatsapp.com/send?phone=%2B351914993260&fbclid=IwY2xjawOsOBtleHRuA2FlbQIxMABzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeyhMltk3oh0PH7bnRwvy7CTSLroxdBstWLbTrvA-dAqyZRYyR-34ufbCEMYs_aem_NzjR18dQo9taMsSQ2VjXsQ" target="_blank">Enviar mensagem</a></p>
+            </div>
+
+            <div class="contacto-card">
+                <h3>Instagram</h3>
+                <p><a href="https://www.instagram.com/o_gasolinas/" target="_blank">@o_gasolinas</a></p>
+            </div>
+
+            <div class="contacto-card">
+                <h3>Facebook</h3>
+                <p><a href="https://www.facebook.com/OGasolinas/?locale=pt_PT" target="_blank">O Gasolinas - Restaurante</a></p>
+            </div>
+
+            <div class="contacto-card">
+                <h3>Horário</h3>
+                <p><a href="#sobrenos">Ver horário de funcionamento</a></p>
+            </div>
+
+        </div>
+    </section>
 
     <!--Footer-->
     <footer>
-        <h6>Victoria's Secret by Beatriz Fernandes</h6>
+        <p>© 2025 O Gasolinas – Restaurante</p>
+        <p>
+            <a href="#contactos">Contactos</a> ·
+            <a href="#localização">Localização</a>
+        </p>
     </footer>
 
 </body>
