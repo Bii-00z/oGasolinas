@@ -187,7 +187,7 @@ section {
 /* Slider */
 .ementa-slider {
     position: relative;
-    background: #000000;
+    background: #254225;
     border-radius: 12px;
     overflow: hidden;
     height: 370px;
@@ -213,7 +213,8 @@ section {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.6);
+    background: #000000;
+    border-radius: 12px;
     color: #fff;
     border: none;
     font-size: 2rem;
